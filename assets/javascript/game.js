@@ -44,27 +44,17 @@ teamTwoButton.addEventListener("click", function () {
     teamTwoButton.disabled = true;
   }
 });
-/* Deleted some of the above code for this attempt below at 
-while statements or other type of loop for checking who won
-** if (teamOneShotsCount && teamTwoShotsCount === 14)
-** while (winOrLose <= 28) {
-**  console.log(winOrLose);
-**   }
-** }
-** if (teamOneButton.disabled && teamTwoButton.disabled == true) {
-**
-** } */
 resetButton.addEventListener("click", function () {
   resetNumCount++;
   resetTxtCount.innerHTML = resetNumCount;
   if (teamOneGoalsCount > teamTwoGoalsCount) {
+    teamOneWinTally++;
+    teamOneWins.innerHTML = "Wins: " + teamOneWinTally;
     window.alert("Team ONE wins!!!");
-    // teamOneWinTally++;
-    // document.teamOneWins.write("Wins: " + teamOneWinTally).innerHTML;
   } else if (teamTwoGoalsCount > teamOneGoalsCount) {
+    teamTwoWinTally++;
+    teamTwoWins.innerHTML = "Wins: " + teamTwoWinTally;
     window.alert("Team TWO wins!!!");
-    // teamTwoWinTally++;
-    // document.teamTwoWins.write("Wins: " + teamTwoWinTally).innerHTML;
   }
   teamOneShotsCount = 0;
   teamOneShots.innerHTML = 0;
