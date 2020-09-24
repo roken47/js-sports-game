@@ -29,7 +29,6 @@ teamOneButton.addEventListener("click", function () {
   if (teamOneShotsCount === 21) {
     teamOneButton.className = "inactive";
     teamOneButton.disabled = true;
-    teamOneButton.style.backgroundColor = "red";
   }
 });
 teamTwoButton.addEventListener("click", function () {
@@ -45,7 +44,6 @@ teamTwoButton.addEventListener("click", function () {
   if (teamTwoShotsCount === 21) {
     teamTwoButton.className = "inactive";
     teamTwoButton.disabled = true;
-    teamTwoButton.style.backgroundColor = "red";
   }
 });
 resetButton.addEventListener("click", function () {
