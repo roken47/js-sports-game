@@ -1,14 +1,14 @@
 let teamOneShots = document.getElementById("teamone-numshots");
 let teamOneGoals = document.getElementById("teamone-numgoals");
-let teamOneButton = document.getElementById("teamone-shoot-button");
+const teamOneButton = document.getElementById("teamone-shoot-button");
 let teamOneShotsCount = 0;
 let teamOneGoalsCount = 0;
 let teamTwoShots = document.getElementById("teamtwo-numshots");
 let teamTwoGoals = document.getElementById("teamtwo-numgoals");
-let teamTwoButton = document.getElementById("teamtwo-shoot-button");
+const teamTwoButton = document.getElementById("teamtwo-shoot-button");
 let teamTwoShotsCount = 0;
 let teamTwoGoalsCount = 0;
-let resetButton = document.getElementById("reset-button");
+const resetButton = document.getElementById("reset-button");
 let resetTxtCount = document.getElementById("num-resets");
 let resetNumCount = 0;
 let teamOneWinTally = 0;
@@ -27,6 +27,7 @@ teamOneButton.addEventListener("click", function () {
     teamOneGoals.innerHTML = teamOneGoalsCount;
   }
   if (teamOneShotsCount === 21) {
+    teamOneButton.className = "inactive";
     teamOneButton.disabled = true;
     teamOneButton.style.backgroundColor = "red";
   }
@@ -42,7 +43,9 @@ teamTwoButton.addEventListener("click", function () {
     teamTwoGoals.innerHTML = teamTwoGoalsCount;
   }
   if (teamTwoShotsCount === 21) {
+    teamTwoButton.className = "inactive";
     teamTwoButton.disabled = true;
+    teamTwoButton.style.backgroundColor = "red";
   }
 });
 resetButton.addEventListener("click", function () {
@@ -67,4 +70,6 @@ resetButton.addEventListener("click", function () {
   teamTwoGoals.innerHTML = 0;
   teamOneButton.disabled = false;
   teamTwoButton.disabled = false;
+  teamOneButton.className = "active";
+  teamTwoButton.className = "active";
 });

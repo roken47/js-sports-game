@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
 * {
-  /* display: flex; */
   margin: 0;
   padding: 0;
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
+  color: white;
 }
+body {
+  background-image: url("https://images.unsplash.com/photo-1532890198585-20730fc10d27?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1808&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .hide {
   display: none;
@@ -18,26 +22,20 @@
 .left {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  align-content: flex-start;
-  /* float: left; */
   margin: 5px;
   padding: 7px;
+  text-align: center;
 }
 .right {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
-  /* align-content: flex-end; */
-  align-self: right;
-  /* float: right; */
   margin: 5px;
   padding: 7px;
+  text-align: center;
 }
 .clear {
-  /* display: flex; */
   clear: both;
 }
 #reset-container,
@@ -46,11 +44,44 @@ h1 {
   flex-direction: column;
   justify-content: space-between;
   text-align: center;
-  
+}
+h1 {
+  font-size: 7rem;
+  font-stretch: semi-expanded;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-shadow: 1rem 0.5rem 0.75rem greenyellow;
+  z-index: 1;
+}
+h2 {
+  font-size: 4rem;
+  font-stretch: wider;
+  text-shadow: 0.25rem 0.5rem 0.75rem red;
 }
 #reset-button {
   order: -1;
   width: 75px;
   height: 40px;
- align-self: center;
+  background-color: slategray;
+  border-color: black;
+  border-radius: 50%;
+  align-self: center;
+}
+.active {
+  width: 80px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: slategray;
+  border-color: black;
+}
+.active:hover {
+  content: "";
+  background-color: greenyellow;
+  color: black;
+}
+.inactive {
+  width: 80px;
+  height: 42px;
+  border-radius: 50%;
+  border-color: black;
 }
