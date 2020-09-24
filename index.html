@@ -12,28 +12,30 @@
         NUMBER OF RESETS: <span id="num-resets">0</span>
       </div>
       <div class="clear"></div>
-      <div class="left">
-        <h2>Team 1</h2>
-        <h6 id="teamone-wins"></h6>
-        <div class="goals">
-          SHOTS TAKEN: <span id="teamone-numshots">0</span><br />
-          GOALS: <span id="teamone-numgoals">0</span>
+      <section id="team-columns">
+        <div class="left">
+          <h2>Team 1</h2>
+          <h4 id="teamone-wins"></h4>
+          <div class="goals">
+            SHOTS TAKEN: <span id="teamone-numshots">0</span><br />
+            GOALS: <span id="teamone-numgoals">0</span>
+          </div>
+          <div>
+            <button id="teamone-shoot-button">SHOOT</button>
+          </div>
         </div>
-        <div>
-          <button id="teamone-shoot-button">SHOOT</button>
+        <div class="right">
+          <h2>Team 2</h2>
+          <h4 id="teamtwo-wins"></h4>
+          <div class="goals">
+            SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br />
+            GOALS: <span id="teamtwo-numgoals">0</span>
+          </div>
+          <div>
+            <button id="teamtwo-shoot-button">SHOOT</button>
+          </div>
         </div>
-      </div>
-      <div class="right">
-        <h2>Team 2</h2>
-        <h6 id="teamtwo-wins"></h6>
-        <div class="goals">
-          SHOTS TAKEN: <span id="teamtwo-numshots">0</span><br />
-          GOALS: <span id="teamtwo-numgoals">0</span>
-        </div>
-        <div>
-          <button id="teamtwo-shoot-button">SHOOT</button>
-        </div>
-      </div>
+      </section>
       <div class="clear"></div>
     </div>
     <script src="./assets/javascript/game.js"></script>

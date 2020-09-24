@@ -28,6 +28,7 @@ teamOneButton.addEventListener("click", function () {
   }
   if (teamOneShotsCount === 21) {
     teamOneButton.disabled = true;
+    teamOneButton.style.backgroundColor = "red";
   }
 });
 teamTwoButton.addEventListener("click", function () {
